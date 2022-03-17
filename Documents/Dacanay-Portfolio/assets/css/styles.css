@@ -51,7 +51,7 @@ body {
 }
 
 .primary-button {
-  margin-top: 1rem !important; 
+  margin-top: 1rem;
   font-family: var(--sub-font);
   font-weight: var(--bold-font);
   background: #fff;
@@ -158,3 +158,73 @@ nav ul li {
     line-height: var(--line-height);
     padding: 0.3rem 0;
   }
+
+/* Summary Section */
+.summary {
+  background-color: var(--bg-color);
+  margin-top: 1rem;
+}
+
+.summary-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.summaries-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.summary-container {
+  text-align: center;
+  width: 21.875rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.summary-container p {
+  padding: 0.4rem;
+}
+
+.summary-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.summary-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.summary-card {
+  background-color: var(--secondary-bg-color);
+  padding: 20px 20px 50px 20px;
+  margin: 10px;
+}
+
+/*Footer*/
+.socials {
+  padding: 20px;
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
