@@ -162,6 +162,11 @@ nav ul li {
     height: auto;
 }
 
+.profile-img {
+  width: 25%;
+  height: auto;
+  margin-top: 1rem;
+}
 .bio {
     width: 25rem;
     padding: 0.625rem;
@@ -172,6 +177,23 @@ nav ul li {
   }
   
   .bio p {
+    font-family: var(--sub-font);
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+  .profile {
+    width: 40rem;
+    height: 20rem;
+    padding: 3rem;
+    background-color: var(--secondary-bg-color);
+  }
+  
+  .profile h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .profile p {
     font-family: var(--sub-font);
     line-height: var(--line-height);
     padding: 0.3rem 0;
