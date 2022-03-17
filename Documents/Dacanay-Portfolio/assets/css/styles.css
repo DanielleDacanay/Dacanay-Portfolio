@@ -54,6 +54,24 @@ body {
   margin-top: 1rem;
   font-family: var(--sub-font);
   font-weight: var(--bold-font);
+  background: var(--accent-color);
+  color: #000;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: solid;
+  border-color: var(--accent-color);
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.primary-button:hover {
+  opacity: 70%;
+}
+
+.secondary-button {
+  margin-top: 1rem;
+  font-family: var(--sub-font);
+  font-weight: var(--bold-font);
   background: #fff;
   color: var(--secondary-color);
   padding: 0.5rem 2rem 0.5rem 2rem;
@@ -64,7 +82,7 @@ body {
   text-decoration: none;
 }
 
-.primary-button:hover {
+.secondary-button:hover {
   background: var(--accent-color);
   font-family: var(--sub-font);
   font-weight: var(--bold-font);
