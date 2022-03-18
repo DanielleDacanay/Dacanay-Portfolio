@@ -257,6 +257,85 @@ nav ul li {
   line-height: 200%;
 }
 
+/*Portfolio*/
+.portfolio-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.portfolio-header h1 {
+  font-family: var(--bolder-font);
+  margin-bottom: 1rem;
+}
+
+.filter-menu {
+  display: flex;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-radius: 15px;
+  border-width: 2px;
+  max-width: 20%;
+  margin: 0 auto;
+  padding: 6px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-family: var(--sub-font);
+  font-weight: 400;
+  background-color: #fff;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: rgba(211, 162,154, 0.3);
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: rgba(211, 162,154, 0.3);
+  color: #000;
+}
+
+.portfolio-container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 5rem;
+}
+
+/*Portfolio Thumbnails*/
+
+.filterDiv {
+  float: left;
+  background-color: var(--secondary-bg-color);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  display: none;
+}
+
+.portfolio-img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
 /*Footer*/
 .socials {
   padding: 20px;

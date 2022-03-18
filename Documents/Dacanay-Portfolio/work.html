@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Favicons -->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/icons/favicon-32x32.png"
+        />
+    
+        <!-- Animate CSS CDN -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>Danielle Dacanay | Portfolio</title>
+      </head>
+    
+      <body>
+<!-- Navbar -->
+        <nav>
+            <h1><img src="assets/images/dd_logo.png" alt="logo" width="125" height="100"></h1>
+            <ul class="navigation">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="assets/docs/Dacanay Resume 2020.pdf" target="_blank" class="nav-link">Resume</a></li>
+            </ul>
+            <!--Burger menu will be hidden on desktop but shown on mobile-->
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+
+<!--Portfolio-->
+<!--Portfolio Header-->
+<section class="portfolio-header">
+    <h1>PORTFOLIO</h1>
+    <div class="filter-menu" id="filter">
+        <button class="btn active" onclick="filterProjects('all')"> All </button>
+        <button class="btn" onclick="filterProjects('design')"> Design </button>
+        <button class="btn" onclick="filterProjects('development')"> Development </button>
+    </div>
+</section>
+<!--Portfolio Grid-->
+<div class="portfolio-container">
+    <div class="filterDiv design">
+        <img src="assets/images/bookd_thumbnail.png" alt="Book'd App" class="portfolio-img"/>
+    </div>
+    <div class="filterDiv design">
+        <img src="assets/images/ubeBakery_thumbnail.png" alt="Book'd App" class="portfolio-img"/>
+    </div>
+    <div class="filterDiv design">
+        <img src="assets/images/moneySense_thumbnail.png" alt="Book'd App" class="portfolio-img"/>
+    </div>
+    <div class="filterDiv development">
+        <img src="assets/images/portfolio_thumbnail.png" alt="Book'd App" class="portfolio-img"/>
+    </div>
+  </div>
+
+<!--JS-->
+<script>
+    filterProjects("all")
+    function filterProjects(selection) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (selection == "all") selection = "";
+      for (i = 0; i < x.length; i++) {
+        removeProject(x[i], "show");
+        if (x[i].className.indexOf(selection) > -1) addProject(x[i], "show");
+      }
+    }
+    
+    function addProject(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function removeProject(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("filter");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</body>
+
+
+</html>
