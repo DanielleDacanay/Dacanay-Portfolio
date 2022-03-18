@@ -252,19 +252,10 @@ nav ul li {
 
 /*About*/
 .about {
-  display: grid;
-  padding-top: 2rem;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  align-items: center;
+  text-align: left;
+  margin: 5rem 12rem 0 12rem;
+  line-height: 200%;
 }
-.about-img {
-  width: 100%;
-  height: auto;
-}
-
 
 /*Footer*/
 .socials {
