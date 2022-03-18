@@ -50,6 +50,10 @@ body {
   font-family: var(--font-family);
 }
 
+p {
+  font-family: var(--sub-font);
+}
+
 .primary-button {
   margin-top: 1rem;
   font-family: var(--sub-font);
@@ -247,21 +251,21 @@ nav ul li {
 }
 
 /*About*/
-.about-pic {
-  float: left;
-  width: 50%;
-  padding: 10px;
+.about {
+  display: grid;
+  padding-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
 }
-.about-details {
-  float: left;
-  width: 50%;
-  padding: 5px;
+.about-img {
+  width: 100%;
+  height: auto;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
 /*Footer*/
 .socials {
   padding: 20px;
