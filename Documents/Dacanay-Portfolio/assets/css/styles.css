@@ -370,6 +370,63 @@ nav ul li {
   display: block;
 }
 
+/*Project Pages*/
+.intro {
+  text-align: center;
+  margin: 50px 300px 50px 300px;
+  
+}
+.intro h1 {
+  font: var(--font-family);
+  font-weight: var(--bold-font);
+  font-size: x-large;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.overview-img {
+  width: 45%;
+  height: auto;
+  justify-content: t;
+}
+
+.overview-summary {
+  width: 100%;
+  padding: 0.625rem;
+}
+
+.overview-summary h1 {
+  margin-bottom: var(--bottom-margin);
+}
+.overview-summary h2 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.overview-summary p {
+  font-family: var(--sub-font);
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  width: 75%;
+}
+
+hr.rounded {
+  margin: auto;
+  border-top: 5px solid;
+  border-color: #a17a69;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
 /*Footer*/
 .socials {
   padding: 20px;
