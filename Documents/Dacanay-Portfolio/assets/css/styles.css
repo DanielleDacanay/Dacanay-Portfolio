@@ -426,6 +426,13 @@ nav ul li {
   width: 75%;
 }
 
+.feature-img {
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /* Topic Section */
 .topic {
   background-color: var(--bg-color);
@@ -467,6 +474,15 @@ nav ul li {
   text-align: center;
   margin-bottom: var(--bottom-margin);
 }
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+}
+
 
 hr.rounded {
   margin: auto;
