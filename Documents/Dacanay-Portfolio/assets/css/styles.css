@@ -426,6 +426,48 @@ nav ul li {
   width: 75%;
 }
 
+/* Topic Section */
+.topic {
+  background-color: var(--bg-color);
+  margin-top: 1rem;
+}
+
+.topics-container {
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0.5px 2px 2px #bebebe);
+}
+
+.topic-card {
+  background-color: #fff;
+  padding: 20px 20px 50px 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.topic-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.topic-container {
+  display: block;
+  width: 21.875rem;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.topic-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.topic-details {
+  text-align: center;
+  margin-bottom: var(--bottom-margin);
+}
+
 hr.rounded {
   margin: auto;
   border-top: 5px solid;
