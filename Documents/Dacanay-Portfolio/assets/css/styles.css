@@ -60,6 +60,7 @@ iframe {
   background-color: #777;
 }
 
+/*Buttons*/
 .primary-button {
   margin-top: 1rem;
   font-family: var(--sub-font);
@@ -98,6 +99,7 @@ iframe {
   font-weight: var(--bold-font);
   color: #000;
 }
+
 /*Nav Bar*/
 nav {
     position: sticky;
@@ -209,7 +211,7 @@ nav ul li {
     padding: 0.3rem 0;
   }
 
-  /*Banner*/
+/*Banner Images*/
   .banner {
     display: flex;
     align-items: center;
@@ -221,7 +223,7 @@ nav ul li {
     max-height: 100%;
   }
 
-/* Summary Section */
+  /* Summary Section */
 .summary {
   background-color: var(--bg-color);
   margin-top: 1rem;
