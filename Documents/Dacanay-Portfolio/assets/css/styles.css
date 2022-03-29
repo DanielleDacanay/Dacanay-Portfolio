@@ -54,6 +54,12 @@ p {
   font-family: var(--sub-font);
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+  background-color: #777;
+}
+
 .primary-button {
   margin-top: 1rem;
   font-family: var(--sub-font);
@@ -383,13 +389,17 @@ nav ul li {
 /*Project Pages*/
 .intro {
   text-align: center;
-  margin: 50px 300px 50px 300px;
+  margin: 50px 150px 50px 150px;
   
 }
 .intro h1 {
   font: var(--font-family);
   font-weight: var(--bold-font);
   font-size: x-large;
+}
+.intro p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .overview {
@@ -404,7 +414,6 @@ nav ul li {
 .overview-img {
   width: 45%;
   height: auto;
-  justify-content: t;
 }
 
 .overview-summary {
@@ -429,8 +438,6 @@ nav ul li {
 .feature-img {
   align-items: center;
   width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 /* Topic Section */
@@ -479,8 +486,29 @@ nav ul li {
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
+}
+
+.content p {
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 50px 150px 50px 150px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  flex: 50%;
 }
 
 
