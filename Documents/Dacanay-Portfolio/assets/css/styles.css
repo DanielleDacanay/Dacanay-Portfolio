@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Variables */
 :root {
-  --font-family: "Oswald", sans-serf;
-  --sub-font: "Quicksand", sans-serf;
+  --font-family: "Oswald", sans-serif;
+  --sub-font: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 700;
@@ -397,7 +397,7 @@ nav ul li {
 .intro h1 {
   font: var(--font-family);
   font-weight: var(--bold-font);
-  font-size: x-large;
+  font-size: xx-large;
 }
 .intro p {
   text-align: justify;
@@ -414,13 +414,13 @@ nav ul li {
 }
 
 .overview-img {
-  width: 45%;
+  width: 50%;
   height: auto;
 }
 
 .overview-summary {
   width: 100%;
-  padding: 0.625rem;
+  text-justify: inter-word;
 }
 
 .overview-summary h1 {
@@ -433,8 +433,7 @@ nav ul li {
 .overview-summary p {
   font-family: var(--sub-font);
   line-height: var(--line-height);
-  padding: 0.3rem 0;
-  width: 75%;
+  width: 100%;
 }
 
 .feature-img {
@@ -499,7 +498,7 @@ nav ul li {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   margin: 50px 150px 50px 150px;
 }
