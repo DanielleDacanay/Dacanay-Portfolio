@@ -16,7 +16,7 @@
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --line-height: 1.5rem;
   --transition: 0.3s;
 }
 /* Variables end */
@@ -52,6 +52,7 @@ body {
 
 p {
   font-family: var(--sub-font);
+  line-height: var(--line-height);
 }
 
 iframe {
@@ -514,15 +515,20 @@ nav ul li {
 
 
 hr.rounded {
-  margin: auto;
-  border-top: 5px solid;
+  margin: 3rem auto 3rem auto;
+  border-top: 1px solid;
   border-color: #a17a69;
-  border-radius: 5px;
-  width: 30%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  border-radius: 3px;
+  width: 80%;
 }
 
+.projectNav {
+  display: grid;
+  width: 80%;
+  margin: 3rem auto 3rem auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 35rem;
+}
 
 /*Footer*/
 .socials {
