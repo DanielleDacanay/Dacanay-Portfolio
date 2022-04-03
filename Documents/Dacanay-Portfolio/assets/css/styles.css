@@ -445,7 +445,7 @@ nav ul li {
 /* Topic Section */
 .topic {
   background-color: var(--bg-color);
-  margin-top: 1rem;
+  margin-top: 1rem
 }
 
 .topics-container {
@@ -488,12 +488,12 @@ nav ul li {
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
 }
 
 .content p {
-  text-align: center;
+  text-justify: inter-word;
 }
 
 .gallery {
@@ -517,7 +517,7 @@ nav ul li {
 hr.rounded {
   margin: 3rem auto 3rem auto;
   border-top: 1px solid;
-  border-color: #a17a69;
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   width: 80%;
 }
