@@ -399,6 +399,7 @@ nav ul li {
   font: var(--font-family);
   font-weight: var(--bold-font);
   font-size: xx-large;
+  margin-bottom: 1.5rem;
 }
 .intro p {
   text-align: justify;
@@ -425,7 +426,7 @@ nav ul li {
 }
 
 .overview-summary h1 {
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 2rem;
 }
 .overview-summary h2 {
   margin-bottom: var(--bottom-margin);
@@ -435,6 +436,7 @@ nav ul li {
   font-family: var(--sub-font);
   line-height: var(--line-height);
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .feature-img {
@@ -488,7 +490,7 @@ nav ul li {
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -509,8 +511,18 @@ nav ul li {
   height: auto;
 }
 
+.gallery li {
+  font-family: var(--sub-font);
+  line-height: 1.5rem;
+}
+
+
 .column {
   flex: 50%;
+}
+
+.column h2 {
+  margin-bottom: 1rem;
 }
 
 
