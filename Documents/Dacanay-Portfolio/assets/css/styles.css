@@ -33,7 +33,7 @@ html {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: disc;
 }
 
 a {
@@ -412,7 +412,8 @@ nav ul li {
   justify-content: center;
   gap: 2.5rem;
   max-width: 68.75rem;
-  margin: auto;
+  margin: 50px 150px 50px 150px;
+
 }
 
 .overview-img {
@@ -496,6 +497,25 @@ nav ul li {
 
 .content p {
   text-justify: inter-word;
+}
+
+.detailed-content {
+  text-align: left;
+  text-justify: inter-word;
+  margin: 50px 150px 50px 150px;
+}
+
+.detailed-content h2 {
+  margin-bottom: 1rem;
+}
+
+.detailed-content ul {
+  margin-left: 35px;
+}
+
+.detailed-content li {
+  font-family: var(--sub-font);
+  line-height: 2rem;
 }
 
 .gallery {
