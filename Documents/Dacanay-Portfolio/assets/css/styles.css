@@ -33,7 +33,7 @@ html {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 a {
@@ -511,6 +511,7 @@ nav ul li {
 
 .detailed-content ul {
   margin-left: 35px;
+  list-style-type: disc;
 }
 
 .detailed-content li {
