@@ -440,11 +440,6 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-.feature-img {
-  align-items: center;
-  width: 100%;
-}
-
 /* Topic Section */
 .topic {
   background-color: var(--bg-color);
@@ -517,6 +512,11 @@ nav ul li {
 .detailed-content li {
   font-family: var(--sub-font);
   line-height: 2rem;
+}
+
+.detailed-content img {
+  align-content: center;
+  width: 100%;
 }
 
 .gallery {
